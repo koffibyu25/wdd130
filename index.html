@@ -2,158 +2,178 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOC FIRMIN / wdd130</title>
-    <meta name="description" content="Yao Koffi Firmin's homepage for WDD130 - Web development course. Learn HTML, CSS, and more.">
-    <meta name="author" content="Yao Koffi Firmin">
-    
-    <style>
-        /* Global styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DOC FIRMIN / wdd130</title>
+  <meta name="description" content="Yao Koffi Firmin's homepage for WDD130 - Web development course. Learn HTML, CSS, and more." />
+  <meta name="author" content="Yao Koffi Firmin" />
 
-        body, html {
-            font-family: Arial, sans-serif;
-            height: 100%;
-            background-color: #f4f4f4;
-        }
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        /* Header styles */
-        header {
-            background-color: #333;
-            color: white;
-            padding: 15px 0;
-            position: relative;
-        }
+    html, body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      height: 100%;
+    }
 
-        nav {
-            text-align: center;
-        }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 15px 0;
+    }
 
-        /* Superposition sur les éléments de navigation */
-        .nav-overlay {
-            position: relative;
-            z-index: 10; /* Pour que les liens soient au-dessus */
-        }
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      flex-wrap: wrap;
+    }
 
-        .nav-overlay a {
-            color: white;
-            text-decoration: none;
-            padding: 10px;
-            margin: 0 15px;
-            font-size: 1.2rem;
-            position: relative;
-            display: inline-block;
-            text-align: center;
-        }
+    .logo img {
+      width: 50px;
+      border-radius: 50%;
+    }
 
-        .nav-overlay a:hover {
-            background-color: rgba(255, 255, 255, 0.3); /* Effet sur survol */
-            border-radius: 5px;
-        }
+    .nav-overlay {
+      display: flex;
+      gap: 20px;
+    }
 
-        /* Superposition dans la section principale */
-        .superposition {
-            position: relative;
-            text-align: center;
-            background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent pour superposer */
-            color: white;
-            padding: 50px 20px;
-            margin: 50px auto;
-            width: 80%;
-            border-radius: 15px;
-        }
+    .nav-overlay a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.1rem;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
 
-        .superposition h1 {
-            font-size: 3rem;
-            margin-bottom: 20px;
-        }
+    .nav-overlay a:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
 
-        .superposition img {
-            border-radius: 10px;
-            margin: 20px;
-        }
+    main {
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
 
-        .superposition p {
-            font-size: 1.2rem;
-            margin-top: 10px;
-        }
+    .superposition {
+      flex: 1 1 65%;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 30px;
+      border-radius: 15px;
+      margin-bottom: 20px;
+    }
 
-        /* Aside */
-        aside {
-            width: 30%;
-            padding: 20px;
-            margin-top: 20px;
-            float: right;
-        }
+    .superposition h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
 
-        aside h2 {
-            font-size: 2rem;
-            margin-bottom: 15px;
-        }
+    .superposition img {
+      border-radius: 10px;
+      margin-bottom: 20px;
+      max-width: 100%;
+      height: auto;
+    }
 
-        aside img {
-            width: 100%;
-            border-radius: 10px;
-        }
+    .superposition p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
 
-        aside p {
-            font-size: 1.1rem;
-            margin-top: 10px;
-        }
+    aside {
+      flex: 1 1 30%;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 15px;
+      margin-bottom: 20px;
+    }
 
-        /* Footer */
-        footer {
-            text-align: center;
-            background-color: #333;
-            color: white;
-            padding: 10px;
-            margin-top: 20px;
-        }
-    </style>
+    aside h2 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+
+    aside img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    aside p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #333;
+      color: white;
+      padding: 15px;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      main {
+        flex-direction: column;
+      }
+
+      .superposition,
+      aside {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="images/koffi.jpg" alt="Logo of Yao Koffi Firmin" width="50">
-            </div>
-            <!-- Navigation superposée -->
-            <div class="nav-overlay">
-                <a href="#">Home</a>
-                <a href="about.html">About</a>
-                <a href="wnr/">Rafting website Siteplan</a>
-            </div>
-        </nav>
-    </header>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="images/koffi.jpg" alt="Portrait of Yao Koffi Firmin" />
+      </div>
+      <div class="nav-overlay">
+        <a href="#">Home</a>
+        <a href="about.html">About</a>
+        <a href="wnr/">Rafting Website Plan</a>
+      </div>
+    </nav>
+  </header>
 
-    <main>
-        <h1>Yao Koffi Firmin / wdd130</h1>
-        <div class="superposition">
-            <img src="images/koffi.jpg" alt="Hello, my name is Yao Koffi Firmin" width="200">
-            <p>Hello! My name is Yao Koffi Firmin, and I am from Abidjan, Ivory Coast. I want to learn more about web development and improve my skills. By doing this, I believe my future job opportunities will be much better.</p>
-        </div>
-    </main>
+  <main>
+    <section class="superposition">
+      <h1>Yao Koffi Firmin / WDD130</h1>
+      <img src="images/koffi.jpg" alt="Yao Koffi Firmin smiling" width="200" />
+      <p>Hello! My name is Yao Koffi Firmin, and I am from Abidjan, Ivory Coast. I want to learn more about web development and improve my skills. By doing this, I believe my future job opportunities will be much better.</p>
+    </section>
 
     <aside>
-        <h2>Ivory Coast</h2>
-        <img src="images/ivory-coast.jpg" alt="Ivory Coast landscape" width="200" height="auto">
-        <p>Ivory Coast, or Côte d'Ivoire, is a country in West Africa with a rich culture and vibrant economy. The capital city is Yamoussoukro, and Abidjan is its largest city.</p>
+      <h2>Ivory Coast</h2>
+      <img src="images/ivory-coast.jpg" alt="Beautiful landscape of Ivory Coast" />
+      <p>Ivory Coast, or Côte d'Ivoire, is a country in West Africa with a rich culture and vibrant economy. The capital city is Yamoussoukro, and Abidjan is its largest city.</p>
     </aside>
+  </main>
 
-    <footer>
-        <p>© 2025 Yao Koffi Firmin. All rights reserved.</p>
-    </footer>
-
+  <footer>
+    <p>&copy; 2025 Yao Koffi Firmin. All rights reserved.</p>
+  </footer>
 </body>
 
 </html>
-
-
-</html>
-
