@@ -8,9 +8,8 @@
     <meta name="description" content="Yao Koffi Firmin's homepage for WDD130 - Web development course. Learn HTML, CSS, and more.">
     <meta name="author" content="Yao Koffi Firmin">
     
-    <!-- CSS intégré directement dans le fichier HTML -->
     <style>
-        /* Styles globaux */
+        /* Global styles */
         * {
             margin: 0;
             padding: 0;
@@ -23,31 +22,41 @@
             background-color: #f4f4f4;
         }
 
-        /* Header */
+        /* Header styles */
         header {
             background-color: #333;
             color: white;
             padding: 15px 0;
+            position: relative;
         }
 
         nav {
             text-align: center;
         }
 
-        nav a {
+        /* Superposition sur les éléments de navigation */
+        .nav-overlay {
+            position: relative;
+            z-index: 10; /* Pour que les liens soient au-dessus */
+        }
+
+        .nav-overlay a {
             color: white;
             text-decoration: none;
             padding: 10px;
             margin: 0 15px;
             font-size: 1.2rem;
+            position: relative;
+            display: inline-block;
+            text-align: center;
         }
 
-        nav a:hover {
-            background-color: #555;
+        .nav-overlay a:hover {
+            background-color: rgba(255, 255, 255, 0.3); /* Effet sur survol */
             border-radius: 5px;
         }
 
-        /* Superposition du contenu */
+        /* Superposition dans la section principale */
         .superposition {
             position: relative;
             text-align: center;
@@ -77,9 +86,9 @@
         /* Aside */
         aside {
             width: 30%;
-            float: right;
             padding: 20px;
             margin-top: 20px;
+            float: right;
         }
 
         aside h2 {
@@ -114,36 +123,35 @@
             <div class="logo">
                 <img src="images/koffi.jpg" alt="Logo of Yao Koffi Firmin" width="50">
             </div>
-            <a href="#">Home</a>
-            <br>
-            <a href="about.html">About</a>
-            <br>
-            <a href="wnr/">Rafting website Siteplan</a>
+            <!-- Navigation superposée -->
+            <div class="nav-overlay">
+                <a href="#">Home</a>
+                <a href="about.html">About</a>
+                <a href="wnr/">Rafting website Siteplan</a>
+            </div>
         </nav>
     </header>
 
     <main>
+        <h1>Yao Koffi Firmin / wdd130</h1>
         <div class="superposition">
-            <h1>Yao Koffi Firmin / wdd130</h1>
-            <!-- Image with a description (alt text) -->
             <img src="images/koffi.jpg" alt="Hello, my name is Yao Koffi Firmin" width="200">
-            <p>Hello! My name is Yao Koffi Firmin, and I am from Abidjan, Ivory Coast. I want to learn more about web
-                development and improve my skills. By doing this, I believe my future job opportunities will be much better.
-            </p>
+            <p>Hello! My name is Yao Koffi Firmin, and I am from Abidjan, Ivory Coast. I want to learn more about web development and improve my skills. By doing this, I believe my future job opportunities will be much better.</p>
         </div>
     </main>
 
     <aside>
         <h2>Ivory Coast</h2>
         <img src="images/ivory-coast.jpg" alt="Ivory Coast landscape" width="200" height="auto">
-        <p>Ivory Coast, or Côte d'Ivoire, is a country in West Africa with a rich culture and vibrant economy. The
-            capital city is Yamoussoukro, and Abidjan is its largest city.</p>
+        <p>Ivory Coast, or Côte d'Ivoire, is a country in West Africa with a rich culture and vibrant economy. The capital city is Yamoussoukro, and Abidjan is its largest city.</p>
     </aside>
 
     <footer>
         <p>© 2025 Yao Koffi Firmin. All rights reserved.</p>
     </footer>
+
 </body>
 
 </html>
+
 
