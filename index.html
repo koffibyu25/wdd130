@@ -5,134 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOC FIRMIN / wdd130</title>
-    <meta name="description" content="Yao Koffi Firmin's homepage for WDD130 - Introduction to Web Development course. Includes personal info, goals, and project links.">
+    <meta name="description"
+        content="Yao Koffi Firmin's homepage for WDD130 - Web development course. Learn HTML, CSS, and more.">
     <meta name="author" content="Yao Koffi Firmin">
     <link rel="stylesheet" href="styles/styles.css">
-    <style>
-        /* Reset margins and paddings */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
 
-        /* Main section styling */
-        .main-content {
-            padding: 20px;
-            text-align: center;
-        }
-
-        .main-content h1 {
-            font-size: 30px;
-            margin-bottom: 20px;
-        }
-
-        .main-content p {
-            font-size: 18px;
-            line-height: 1.5;
-        }
-
-        /* Ivory Coast Section */
-        .ivory-coast-section {
-            padding: 20px;
-            background-color: #f4f4f4;
-            text-align: center;
-        }
-
-        .ivory-coast-section h2 {
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
-
-        .ivory-coast-section p {
-            font-size: 18px;
-            line-height: 1.5;
-            margin-top: 10px;
-        }
-
-        .ivory-coast-section img {
-            width: 200px;
-            height: auto;
-            margin-top: 20px;
-        }
-
-        /* Footer styling */
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 20px;
-        }
-
-        /* Container for overlayed links */
-        .link-container {
-            position: relative;
-            width: 300px;
-            height: 100px;
-            background-color: #333;
-            border-radius: 10px;
-            margin: 20px auto;
-        }
-
-        /* "Home" link */
-        .home-link {
-            display: block;
-            text-decoration: none;
-            color: white;
-            text-align: center;
-            font-size: 20px;
-            line-height: 100px;
-        }
-
-        /* "Rafting website Siteplan" link overlayed on "Home" */
-        .raft-link {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            color: white;
-            font-size: 20px;
-            text-align: center;
-            line-height: 100px;
-            opacity: 0.8;
-            text-decoration: none;
-        }
-
-        /* Hover effect */
-        .raft-link:hover {
-            opacity: 1;
-        }
-    </style>
 </head>
 
 <body>
-    <!-- Main Content Section -->
-    <div class="main-content">
-        <h1>Yao Koffi Firmin / wdd130</h1>
-        <!-- Image -->
-        <img src="images/koffi.jpg" alt="Hello, my name is Yao Koffi Firmin" width="200">
-        <p>Hello! My name is Yao Koffi Firmin, and I am from Abidjan, Ivory Coast. I want to learn more about web development and improve my skills. By doing this, I believe my future job opportunities will be much better.</p>
-    </div>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/koffi.jpg" alt="Logo of Yao Koffi Firmin" width="50">
+            </div>
+            <a href="#">Home</a>
+            <br>
+            <a href="about.html">About</a>
+            <br>
+            <a href="wnr/">Rafting website Siteplan</a>
+        </nav>
+    </header>
 
-    <!-- Ivory Coast Section -->
-    <div class="ivory-coast-section">
+    <main>
+        <h1>Yao Koffi Firmin / wdd130</h1>
+        <!-- Image with a description (alt text) -->
+        <img src="images/koffi.jpg" alt="Hello, my name is Yao Koffi Firmin" width="200">
+        <p>Hello! My name is Yao Koffi Firmin, and I am from Abidjan, Ivory Coast. I want to learn more about web
+            development and improve my skills. By doing this, I believe my future job opportunities will be much better.
+        </p>
+    </main>
+    <aside>
         <h2>Ivory Coast</h2>
         <img src="images/ivory-coast.jpg" alt="Ivory Coast landscape" width="200" height="auto">
-        <p>Ivory Coast, also known as Côte d'Ivoire, is a beautiful country in West Africa known for its rich culture, diverse landscapes, and economic development. It has a vibrant tradition and history, with Abidjan as its economic capital.</p>
-    </div>
+        <p>Ivory Coast, or Côte d'Ivoire, is a country in West Africa with a rich culture and vibrant economy. The
+            capital city is Yamoussoukro, and Abidjan is its largest city.</p>
+    </aside>
 
-    <!-- Overlayed Links Section -->
-    <div class="link-container">
-        <!-- "Home" Link -->
-        <a href="#" class="home-link">Home</a>
-        <!-- "Rafting website Siteplan" link overlayed -->
-        <a href="wnr/" class="raft-link">Rafting Website Siteplan</a>
-    </div>
-
-    <!-- Footer -->
     <footer>
         <p>© 2025 Yao Koffi Firmin. All rights reserved.</p>
     </footer>
