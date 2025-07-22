@@ -1,26 +1,43 @@
-/* Global reset */
+/* Réinitialisation des marges et paddings */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Navigation */
-nav {
-    background-color: #333;
-    padding: 10px;
-    text-align: center;
+/* Appliquer une hauteur à la page entière */
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
 }
 
-nav a {
+/* Image de fond et mise en page avec Flexbox */
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url('ivory-coast-image.jpg'); /* Remplace par ton image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 18px;
-    transition: color 0.3s ease;
 }
 
-/* Aside */
+/* Titre principal */
+h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-top: 20px;
+}
+
+/* Contenu principal */
+main {
+    flex: 1;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent pour lisibilité */
+    border-radius: 10px;
+}
+
+/* Sidebar */
 aside {
     width: 300px;
     margin: 20px;
@@ -30,13 +47,13 @@ aside {
     color: #333;
 }
 
-/* Image in aside */
+/* Image dans aside */
 aside img {
     width: 200px;
     height: auto;
 }
 
-/* Image in main */
+/* Image dans main */
 main img {
     width: 150px;
     height: auto;
@@ -46,21 +63,14 @@ main img {
     margin: 20px auto;
 }
 
-/* Header */
-h1 {
-    text-align: center;
-    font-size: 36px;
-    color: #333;
-    margin-top: 20px;
-}
-
-/* Footer */
+/* Footer toujours en bas */
 footer {
     background-color: #4A90E2;
     color: white;
     text-align: center;
     padding: 20px;
-    margin-top: auto;
-    /* Aligne le footer tout en bas */
+    margin-top: auto;  /* Aligne le footer tout en bas */
     border-top: 2px solid #fff;
+}
+
 }
