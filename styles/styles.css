@@ -1,26 +1,66 @@
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation */
 nav {
-    background-color: darkblue;
+    background-color: #333;
     padding: 10px;
+    text-align: center;
 }
 
 nav a {
     color: white;
-    display: block;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+/* Aside */
+aside {
+    width: 300px;
+    margin: 20px;
+    border: 2px solid #4A90E2;
     padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-h1 {
-    color: darkblue;
+/* Image in aside */
+aside img {
+    width: 200px;
+    height: auto;
 }
 
-img {
+/* Image in main */
+main img {
     width: 150px;
     height: auto;
-    border: 1px solid black;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
+    border: 2px solid #333;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 20px auto;
 }
 
-p {
-    padding: 10px;
+/* Header */
+h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #4A90E2;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+    /* Aligne le footer tout en bas */
+    border-top: 2px solid #fff;
 }
