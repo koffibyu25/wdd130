@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DOC FIRMIN / wdd130</title>
-  <meta name="description" content="Yao Koffi Firmin's homepage for WDD130 - Web development course. Learn HTML, CSS, and more." />
+  <title>DOC FIRMIN / WDD130</title>
+  <meta name="description" content="Personal page of Yao Koffi Firmin for the WDD130 - Web Development course." />
   <meta name="author" content="Yao Koffi Firmin" />
 
   <style>
@@ -17,10 +17,17 @@
     }
 
     html, body {
+      height: 100%;
       font-family: Arial, sans-serif;
       background-color: #f4f4f4;
       color: #333;
-      height: 100%;
+    }
+
+    /* Main Layout */
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
 
     header {
@@ -45,6 +52,7 @@
     .nav-overlay {
       display: flex;
       gap: 20px;
+      flex-wrap: wrap;
     }
 
     .nav-overlay a {
@@ -61,29 +69,32 @@
     }
 
     main {
+      flex: 1;
       padding: 20px;
       display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
     }
 
     .superposition {
-      flex: 1 1 65%;
       background-color: rgba(0, 0, 0, 0.6);
       color: white;
       padding: 30px;
       border-radius: 15px;
-      margin-bottom: 20px;
+      width: 100%;
+      max-width: 700px;
+      text-align: center;
     }
 
     .superposition h1 {
-      font-size: 2.5rem;
+      font-size: 2.2rem;
       margin-bottom: 20px;
     }
 
     .superposition img {
       border-radius: 10px;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
       max-width: 100%;
       height: auto;
     }
@@ -94,11 +105,12 @@
     }
 
     aside {
-      flex: 1 1 30%;
-      padding: 20px;
       background-color: #fff;
       border-radius: 15px;
-      margin-bottom: 20px;
+      padding: 20px;
+      width: 100%;
+      max-width: 700px;
+      text-align: center;
     }
 
     aside h2 {
@@ -108,72 +120,6 @@
 
     aside img {
       width: 100%;
+      max-width: 100%;
       height: auto;
       border-radius: 10px;
-      margin-bottom: 10px;
-    }
-
-    aside p {
-      font-size: 1rem;
-      line-height: 1.6;
-    }
-
-    footer {
-      text-align: center;
-      background-color: #333;
-      color: white;
-      padding: 15px;
-    }
-
-    @media (max-width: 768px) {
-      nav {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      main {
-        flex-direction: column;
-      }
-
-      .superposition,
-      aside {
-        width: 100%;
-      }
-    }
-  </style>
-</head>
-
-<body>
-  <header>
-    <nav>
-      <div class="logo">
-        <img src="images/koffi.jpg" alt="Portrait of Yao Koffi Firmin" />
-      </div>
-      <div class="nav-overlay">
-        <a href="#">Home</a>
-        <a href="about.html">About</a>
-        <a href="wnr/">Rafting Website Plan</a>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-    <section class="superposition">
-      <h1>Yao Koffi Firmin / WDD130</h1>
-      <img src="images/koffi.jpg" alt="Yao Koffi Firmin smiling" width="200" />
-      <p>Hello! My name is Yao Koffi Firmin, and I am from Abidjan, Ivory Coast. I want to learn more about web development and improve my skills. By doing this, I believe my future job opportunities will be much better.</p>
-    </section>
-
-    <aside>
-      <h2>Ivory Coast</h2>
-      <img src="images/ivory-coast.jpg" alt="Beautiful landscape of Ivory Coast" />
-      <p>Ivory Coast, or Côte d'Ivoire, is a country in West Africa with a rich culture and vibrant economy. The capital city is Yamoussoukro, and Abidjan is its largest city.</p>
-    </aside>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Yao Koffi Firmin. All rights reserved.</p>
-  </footer>
-</body>
-
-</html>
