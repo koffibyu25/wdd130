@@ -1,4 +1,4 @@
-/* Réinitialisation des marges et paddings */
+/* Reset des marges et paddings */
 * {
     margin: 0;
     padding: 0;
@@ -11,66 +11,84 @@ html, body {
     font-family: Arial, sans-serif;
 }
 
-/* Image de fond et mise en page avec Flexbox */
+/* Mise en page avec Flexbox */
 body {
     display: flex;
     flex-direction: column;
-    background-image: url('ivory-coast-image.jpg'); /* Remplace par ton image */
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    color: white;
+    background-color: #f0f0f0; /* Choisir une couleur de fond si tu n'as pas d'image */
+    color: #333;
 }
 
-/* Titre principal */
-h1 {
-    text-align: center;
-    font-size: 36px;
-    margin-top: 20px;
+/* Header et navigation */
+header {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
 }
 
 /* Contenu principal */
 main {
     flex: 1;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent pour lisibilité */
+    background-color: rgba(0, 0, 0, 0.5); /* Transparence pour le texte */
     border-radius: 10px;
+    margin: 20px;
+    color: white;
 }
 
-/* Sidebar */
+main img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Aside (barre latérale) */
 aside {
     width: 300px;
     margin: 20px;
-    border: 2px solid #4A90E2;
     padding: 20px;
     background-color: #f4f4f4;
     color: #333;
+    border: 2px solid #4A90E2;
+    border-radius: 10px;
 }
 
 /* Image dans aside */
 aside img {
     width: 200px;
     height: auto;
+    border-radius: 10px;
 }
 
-/* Image dans main */
-main img {
-    width: 150px;
-    height: auto;
-    border: 2px solid #333;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    display: block;
-    margin: 20px auto;
-}
-
-/* Footer toujours en bas */
+/* Footer */
 footer {
     background-color: #4A90E2;
     color: white;
     text-align: center;
     padding: 20px;
     margin-top: auto;  /* Aligne le footer tout en bas */
-    border-top: 2px solid #fff;
+    border-top: 2px solid white;
 }
 
+/* Responsiveness */
+@media (max-width: 768px) {
+    aside {
+        width: 100%;
+        margin: 10px;
+    }
+
+    main {
+        margin: 10px;
+    }
 }
