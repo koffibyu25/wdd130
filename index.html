@@ -2,124 +2,48 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DOC FIRMIN / WDD130</title>
-  <meta name="description" content="Personal page of Yao Koffi Firmin for the WDD130 - Web Development course." />
-  <meta name="author" content="Yao Koffi Firmin" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOC FIRMIN / wdd130</title>
+    <meta name="description"
+        content="Yao Koffi Firmin's homepage for WDD130 - Web development course. Learn HTML, CSS, and more.">
+    <meta name="author" content="Yao Koffi Firmin">
+    <link rel="stylesheet" href="styles/styles.css">
 
-  <style>
-    /* Reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+</head>
 
-    html, body {
-      height: 100%;
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
-    }
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/koffi.jpg" alt="Logo of Yao Koffi Firmin" width="50">
+            </div>
+            <a href="#">Home</a>
+            <br>
+            <a href="about.html">About</a>
+            <br>
+            <a href="wnr/">Rafting website Siteplan</a>
+        </nav>
+    </header>
 
-    /* Main Layout */
-    body {
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
+    <main>
+        <h1>Yao Koffi Firmin / wdd130</h1>
+        <!-- Image with a description (alt text) -->
+        <img src="images/koffi.jpg" alt="Hello, my name is Yao Koffi Firmin" width="200">
+        <p>Hello! My name is Yao Koffi Firmin, and I am from Abidjan, Ivory Coast. I want to learn more about web
+            development and improve my skills. By doing this, I believe my future job opportunities will be much better.
+        </p>
+    </main>
+    <aside>
+        <h2>Ivory Coast</h2>
+        <img src="images/ivory-coast.jpg" alt="Ivory Coast landscape" width="200" height="auto">
+        <p>Ivory Coast, or Côte d'Ivoire, is a country in West Africa with a rich culture and vibrant economy. The
+            capital city is Yamoussoukro, and Abidjan is its largest city.</p>
+    </aside>
 
-    header {
-      background-color: #333;
-      color: white;
-      padding: 15px 0;
-    }
+    <footer>
+        <p>© 2025 Yao Koffi Firmin. All rights reserved.</p>
+    </footer>
+</body>
 
-    nav {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 20px;
-      flex-wrap: wrap;
-    }
-
-    .logo img {
-      width: 50px;
-      border-radius: 50%;
-    }
-
-    .nav-overlay {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-
-    .nav-overlay a {
-      color: white;
-      text-decoration: none;
-      font-size: 1.1rem;
-      padding: 8px 12px;
-      border-radius: 5px;
-      transition: background 0.3s ease;
-    }
-
-    .nav-overlay a:hover {
-      background-color: rgba(255, 255, 255, 0.3);
-    }
-
-    main {
-      flex: 1;
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 30px;
-    }
-
-    .superposition {
-      background-color: rgba(0, 0, 0, 0.6);
-      color: white;
-      padding: 30px;
-      border-radius: 15px;
-      width: 100%;
-      max-width: 700px;
-      text-align: center;
-    }
-
-    .superposition h1 {
-      font-size: 2.2rem;
-      margin-bottom: 20px;
-    }
-
-    .superposition img {
-      border-radius: 10px;
-      margin-bottom: 15px;
-      max-width: 100%;
-      height: auto;
-    }
-
-    .superposition p {
-      font-size: 1.1rem;
-      line-height: 1.6;
-    }
-
-    aside {
-      background-color: #fff;
-      border-radius: 15px;
-      padding: 20px;
-      width: 100%;
-      max-width: 700px;
-      text-align: center;
-    }
-
-    aside h2 {
-      font-size: 1.8rem;
-      margin-bottom: 10px;
-    }
-
-    aside img {
-      width: 100%;
-      max-width: 100%;
-      height: auto;
-      border-radius: 10px;
+</html>
