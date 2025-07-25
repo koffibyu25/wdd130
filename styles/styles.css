@@ -1,28 +1,15 @@
-/* Reset des marges et paddings */
-* {
+/* Global reset */
+    {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Appliquer une hauteur à la page entière */
-html, body {
-    height: 100%;
-    font-family: Arial, sans-serif;
-}
-
-/* Mise en page avec Flexbox */
-body {
-    display: flex;
-    flex-direction: column;
-    background-color: #f0f0f0; /* Choisir une couleur de fond si tu n'as pas d'image */
-    color: #333;
-}
-
-/* Header et navigation */
-header {
-    background-color: #333;
+/* Navigation */
+nav {
+    background-color: hsl(236, 51%, 43%);
     padding: 10px;
+    text-align: center;
 }
 
 nav a {
@@ -30,45 +17,43 @@ nav a {
     text-decoration: none;
     margin: 0 15px;
     font-size: 18px;
+    transition: color 0.3s ease;
 }
 
-nav a:hover {
-    text-decoration: underline;
-}
-
-/* Contenu principal */
-main {
-    flex: 1;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5); /* Transparence pour le texte */
-    border-radius: 10px;
-    margin: 20px;
-    color: white;
-}
-
-main img {
-    width: 200px;
-    height: auto;
-    border-radius: 10px;
-    margin-top: 20px;
-}
-
-/* Aside (barre latérale) */
+/* Aside */
 aside {
     width: 300px;
     margin: 20px;
+    border: 2px solid #3289ec;
     padding: 20px;
     background-color: #f4f4f4;
     color: #333;
-    border: 2px solid #4A90E2;
-    border-radius: 10px;
 }
 
-/* Image dans aside */
+/* Image in aside */
 aside img {
     width: 200px;
     height: auto;
-    border-radius: 10px;
+}
+
+/* Image in main */
+main img {
+    width: 150px;
+    height: auto;
+    border: 2px solid #333;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 20px auto;
+    float: right;
+    margin: 0 0 1rem 1rem;
+}
+
+/* Header */
+h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #333;
+    margin-top: 20px;
 }
 
 /* Footer */
@@ -77,18 +62,22 @@ footer {
     color: white;
     text-align: center;
     padding: 20px;
-    margin-top: auto;  /* Aligne le footer tout en bas */
-    border-top: 2px solid white;
+    margin-top: auto;
+    border-top: 2px solid #fff;
 }
 
-/* Responsiveness */
-@media (max-width: 768px) {
-    aside {
-        width: 100%;
-        margin: 10px;
+/* class selector */
+box {
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    background-color: #eee;
+    color: hsl(0, 0%, 0%);
+
+    .sofia-regular {
+        font-family: "Sofia", cursive;
+        font-weight: 400;
+        font-style: normal;
     }
 
-    main {
-        margin: 10px;
-    }
 }
